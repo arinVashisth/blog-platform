@@ -7,13 +7,13 @@ A full-stack MERN Blog Platform developed as part of my internship project. The 
 ## 🚀 Live Demo
 
 ### 🌐 Public Website
-https://YOUR-FRONTEND-URL.vercel.app
+[https://YOUR-FRONTEND-URL.vercel.app](https://blog-platform-dun-two.vercel.app/)
 
 ### 🔐 Admin Panel
-https://YOUR-ADMIN-URL.vercel.app
+[https://YOUR-ADMIN-URL.vercel.app](https://blog-platform-awsw.vercel.app/)
 
 ### ⚙️ Backend API
-https://YOUR-RENDER-URL.onrender.com
+[https://YOUR-RENDER-URL.onrender.com](https://rewathi-blog-api.onrender.com/)
 
 ---
 
