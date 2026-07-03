@@ -23,10 +23,10 @@ router.get(
 );
 
 router.post(
-    "/",
-    authMiddleware,
-    roleMiddleware("superadmin"),
-    createUser
+  "/",
+  authMiddleware,
+  roleMiddleware("superadmin"),
+  createUser
 );
 
 router.get(
