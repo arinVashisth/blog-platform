@@ -9,6 +9,7 @@ const {
   getUsers,
   getUser,
   updateUser,
+  createUser,
   deleteUser,
 } = require("../controllers/userController");
 
@@ -19,6 +20,13 @@ router.get(
   authMiddleware,
   roleMiddleware("superadmin"),
   getUsers
+);
+
+router.post(
+    "/",
+    authMiddleware,
+    roleMiddleware("superadmin"),
+    createUser
 );
 
 router.get(
@@ -34,6 +42,8 @@ router.put(
   roleMiddleware("superadmin"),
   updateUser
 );
+
+
 
 router.delete(
   "/:id",

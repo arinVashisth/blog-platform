@@ -1,6 +1,6 @@
 const User = require("../models/User");
 const Blog = require("../models/Blog");
-
+const bcrypt = require("bcryptjs");
 // Get All Users
 const getUsers = async (req, res) => {
   try {
@@ -15,6 +15,54 @@ const getUsers = async (req, res) => {
     res.status(500).json({
       message: error.message,
     });
+  }
+};
+
+const createUser = async (req, res) => {
+  try {
+
+    const {
+      name,
+      email,
+      password,
+      role,
+      status,
+    } = req.body;
+
+    const existingUser = await User.findOne({
+      email,
+    });
+
+    if (existingUser) {
+      return res.status(400).json({
+        message: "Email already exists",
+      });
+    }
+
+    const hashedPassword = await bcrypt.hash(
+      password,
+      10
+    );
+
+    const user = await User.create({
+      name,
+      email,
+      password: hashedPassword,
+      role,
+      status,
+    });
+
+    res.status(201).json({
+      message: "User Created Successfully",
+      user,
+    });
+
+  } catch (error) {
+
+    res.status(500).json({
+      message: error.message,
+    });
+
   }
 };
 
@@ -125,8 +173,9 @@ const deleteUser = async (req, res) => {
 };
 
 module.exports = {
-  getUsers,
-  getUser,
-  updateUser,
-  deleteUser,
+    register,
+    login,
+    getUsers,
+    deleteUser,
+    createUser,
 };
