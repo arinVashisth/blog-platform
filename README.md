@@ -1,4 +1,4 @@
-# 📰 MERN Blog Platform with Role-Based Access Control (RBAC)
+<img width="1907" height="871" alt="image" src="https://github.com/user-attachments/assets/6ed64209-39d8-41a0-bdb2-532120785ebb" /># 📰 MERN Blog Platform with Role-Based Access Control (RBAC)
 
 A full-stack MERN Blog Platform developed as part of my internship project. The application includes a secure admin panel with Role-Based Access Control (RBAC), a public blog website, SEO features, category/tag management, contact management, and user management.
 
@@ -185,30 +185,6 @@ npm install
 
 npm run dev
 ```
-
----
-
-## 📷 Screenshots
-
-### Login
-
-(Add Screenshot)
-
-### Dashboard
-
-(Add Screenshot)
-
-### Blog Management
-
-(Add Screenshot)
-
-### User Management
-
-(Add Screenshot)
-
-### Public Website
-
-(Add Screenshot)
 
 ---
 
