@@ -85,7 +85,7 @@ export default function Dashboard() {
                             {blog.featureImage && (
 
                                 <img
-                                    src={`http://localhost:5000${blog.featureImage}`}
+                                    src={`${import.meta.env.VITE_API_URL.replace("/api","")}${blog.featureImage}`}
                                     className="img-fluid rounded-start"
                                     style={{
                                         height: "180px",
