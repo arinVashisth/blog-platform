@@ -3,6 +3,26 @@
 A full-stack MERN Blog Platform developed as part of my internship project. The application includes a secure admin panel with Role-Based Access Control (RBAC), a public blog website, SEO features, category/tag management, contact management, and user management.
 
 ---
+Admin Creds:
+
+Super Admin
+"email": "john@example.com",
+"password": "123456"
+
+
+
+Editor
+"email": "arinvashisth@gmail.com",
+  "password": "123456"
+
+
+
+Author
+"email": "author@rewathi.com",
+"password": "123456"
+
+---
+
 
 ## 🚀 Live Demo
 
