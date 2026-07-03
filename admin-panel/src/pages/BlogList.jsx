@@ -192,7 +192,7 @@ export default function BlogList() {
                                   <div className="text-center mb-4">
 
                                       <img
-                                          src={`http://localhost:5000${blog.featureImage}`}
+                                          src={`${import.meta.env.VITE_API_URL.replace("/api", "")}${blog.featureImage}`}
                                           className="img-fluid rounded shadow"
                                           style={{
                                               maxHeight: "350px",

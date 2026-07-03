@@ -117,7 +117,7 @@ export default function BlogInformation({
                             <div className="mb-3">
 
                                 <img
-                                    src={`http://localhost:5000${imagePath}`}
+                                    src={`${import.meta.env.VITE_API_URL.replace("/api", "")}${imagePath}`}
                                     className="img-fluid rounded shadow"
                                     style={{
                                         maxHeight:"250px"

@@ -15,7 +15,7 @@ export default function BlogCard({ blog }) {
             {blog.featureImage && (
 
                 <img
-                    src={`http://localhost:5000${blog.featureImage}`}
+                    src={`${import.meta.env.VITE_API_URL.replace("/api", "")}${blog.featureImage}`}
                     className="card-img-top"
                     alt={blog.title}
                     style={{
